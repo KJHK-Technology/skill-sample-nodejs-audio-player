@@ -196,7 +196,7 @@ var controller = function () {
             var token = String(this.attributes['playOrder'][this.attributes['index']]);
             var playBehavior = 'REPLACE_ALL';
             var podcast = audioData[this.attributes['playOrder'][this.attributes['index']]];
-            var offsetInMilliseconds = this.attributes['offsetInMilliseconds'];
+            var offsetInMilliseconds = 0;//this.attributes['offsetInMilliseconds'];
             // Since play behavior is REPLACE_ALL, enqueuedToken attribute need to be set to null.
             this.attributes['enqueuedToken'] = null;
 
